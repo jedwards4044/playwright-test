@@ -1,0 +1,19 @@
+{
+    "name": "playwright-test",
+    "version": "1.0.0",
+    "description": "Minimal test repository for Playwright testing",
+    "main": "base.ts",
+    "scripts": {
+        "start": "ts-node base.ts",
+        "build": "tsc",
+        "dev": "ts-node base.ts"
+    },
+    "dependencies": {
+        "playwright": "^1.42.1"
+    },
+    "devDependencies": {
+        "typescript": "^5.4.2",
+        "ts-node": "^10.9.2",
+        "@types/node": "^20.11.24"
+    }
+}
