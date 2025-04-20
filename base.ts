@@ -20,13 +20,6 @@ async function run() {
     })
     console.log('Number of links found on page:', linkCount)
 
-    // Try to find the Google search box to prove we're on Google
-    const searchBoxExists = await page.evaluate(() => {
-        const searchBox = document.querySelector('input[name="q"]')
-        return !!searchBox
-    })
-    console.log('Google search box found:', searchBoxExists)
-
     await page.waitForTimeout(10000)
     console.log('Closing browser...')
     await browser.close()
